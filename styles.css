@@ -1,0 +1,922 @@
+
+
+body 
+{
+    font-family: "Helvetica", sans-serif;
+   
+}
+
+  
+ .row2 > .column2 {
+  padding: 0  12px;
+}
+
+.row2:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column2 {
+  float: left;
+  width: 30%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 90%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: gray;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    
+    #header
+    {
+       height:2px;
+    background: white; 
+    }
+    
+    .landarchArticle1:hover, .landarchArticle2:hover, .landarchArticle3:hover
+    {
+        opacity: 0.5;
+    }
+    
+   
+    .popUptext
+    {
+        -webkit-animation: color-change 3s infinite;
+    -moz-animation: color-change 3s infinite;
+    -o-animation: color-change 3s infinite;
+    -ms-animation: color-change 3s infinite;
+    animation: color-change 3s infinite;
+        text-align: center;
+    }
+    
+    @-webkit-keyframes color-change {
+     0% { color: lightpink; }
+    50% { color: lightcoral; }
+    100% { color: indianred; }
+}
+@-moz-keyframes color-change {
+   0% { color: lightpink; }
+    50% { color: lightcoral; }
+    100% { color: indianred; }
+}
+@-ms-keyframes color-change {
+    0% { color: lightpink; }
+    50% { color: lightcoral; }
+    100% { color: indianred; }
+}
+@-o-keyframes color-change {
+    0% { color: lightpink; }
+    50% { color: lightcoral; }
+    100% { color: indianred; }
+}
+@keyframes color-change {
+   0% { color: lightpink; }
+    50% { color: lightcoral; }
+    100% { color: indianred; }
+}
+    
+
+    
+    
+.sideArticles {
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 1000px;
+  background: lightblue;
+  overflow-x: hidden;
+  padding: 8px 0;
+    
+    
+    
+    
+    
+} 
+
+.sideArticles img {
+
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 16px;
+    padding-right: 5px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+}
+    
+.main {
+  margin-right: 190px; /* Same width as the sidebar + left position in px */
+  padding: 0px 10px;
+    
+}    
+    
+    
+.capaGarden3
+{
+    padding-top: 180px;
+}
+    
+.landArchintroH3
+    {
+        text-align: center;
+    }
+    
+.landArchintroH2
+{
+    font-family: "Trebuchet MS", sans-serif;
+    padding-left: 50px;
+    padding-right: 60px;
+
+}
+
+.capaImgcolumn
+    {
+  float: left;
+  width: 20%;
+  padding: 10px;
+    padding-left: 70px;    
+    }
+.capaImgrow::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    
+.capaGarden1
+    {
+        padding-left: 20px;
+        padding-bottom: 100px;
+    }
+    
+.capaGarden2
+    {
+        padding-left: 20px;
+        padding-bottom: 100px;
+    }    
+    
+.textXimg
+    {
+        -webkit-column-count: 2;
+        -webkit-column-gap: 10px;
+        padding-top: 100px;
+    }
+    
+    .capaSide
+    {
+    display: flex;
+      
+    
+    }
+    
+    
+    
+    
+    
+.backImg {
+  height: 600px;
+  background-image:url('https://www.nationaltrust.org.uk/images/1431734049031-capability-brown-1400.jpg');
+
+  
+}
+
+.backImg2 {
+  height: 600px;
+  background-image:url('http://www.redraggallery.co.uk/library/inventory/Stephen-Brown-8956HQ-High-Summer.jpg');
+
+  
+}
+
+.backImg3 {
+  height: 600px;
+  background-image:url('https://i.pinimg.com/originals/21/ed/a7/21eda7ae5c479a7ed939786ca043bae5.jpg');
+
+  
+}
+    
+
+
+.landarchH1
+{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 70px;
+    text-align: center;
+    
+}
+    
+.landArchintro
+{
+    
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 80px;
+    font-size: 17px;
+    word-spacing: 3px;
+    
+}
+    
+    .landArchintro2
+    {
+        padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 17px;
+    word-spacing: 3px; 
+    }
+ 
+ .logoX
+    {
+        display: flex;
+    }
+            
+.footer {
+   
+  height: 100px;
+/*
+  right: 0;
+  bottom: 0;
+  left: 0;
+*/
+  color: white;
+  background-color: black;
+  text-align: center;
+
+}
+
+.footerContent
+       {
+           padding-top: 10px;
+       }
+       
+.search-container
+       {
+           float: right;
+       }
+
+.fa:hover {
+    opacity: 0.7;
+}
+       .fa-twitter {
+           float: left;
+  background: #55ACEE;
+  color: white;
+            padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+       .fa-instagram {
+           float: left;
+  background: #125688;
+  color: white;
+            padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-pinterest {
+    float: left;
+  background: #cb2027;
+  color: white;
+     padding: 20px;
+  font-size: 20px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+      
+            
+nav {cursor: pointer;}            
+img {cursor: pointer;}            
+  
+.indexColumn
+            
+{
+display: flex;
+    padding-left: 80px;
+}
+            
+.indexH1
+{
+    text-align: center;
+    
+}
+            
+.capaText
+{
+    padding-top: 10px;
+    padding-bottom: 80px;
+    padding-right: 250px;
+    padding-left: 250px;
+    text-align: center;
+   
+}
+.brownText
+{
+   padding-top: 10px;
+    padding-bottom: 80px;
+    padding-right: 250px;
+    padding-left: 250px;
+    text-align: center;
+} 
+            
+.francoText
+{
+    padding-top: 10px;
+    padding-bottom: 80px;
+    padding-right: 250px;
+    padding-left: 250px;
+    text-align: center;
+}
+            
+.introIndex
+{
+    padding-top: 10px;
+    padding-bottom: 80px;
+    padding-right: 250px;
+    padding-left: 250px;
+    text-align: center;
+}
+
+.brownImg
+{
+    padding-left: 55px;
+    
+}
+            
+.brownImghover
+{
+    padding-left: 55px;
+    
+}
+            
+.capaImg
+{
+    padding-left: 55px;
+    
+}
+            
+.capaImghover
+{
+    padding-left: 55px;
+}
+            
+.francoImg
+{
+    padding-left: 55px;
+}
+            
+.francoImghover
+{
+    padding-left: 55px;
+}
+            
+/*when the mouse hovers over the image another image is also shown*/
+.column1 .brownImghover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.column1:hover .brownImghover {
+  display: block;
+}
+            
+.column1 .capaImghover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.column1:hover .capaImghover {
+  display: block;
+    
+}
+
+.column1 .francoImghover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+.column1:hover .francoImghover {
+  display: block;
+    
+}            
+
+
+.column1
+            {position: relative;
+}
+
+
+            
+.slideshowContainer {
+  max-width: 1140px;
+  position: relative;
+     margin: auto;
+    
+    
+
+}
+/* Styles for the numbers (1/3) */
+.slideNumber {
+  color: black;
+  font-size: 12px;
+  padding: 8px 82px;
+  position: absolute;
+  top: 0;
+}
+            
+/* Animation (fading in the slideshow) */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+            
+/* The dot buttons at the bottom of the slideshow */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 1.3%;
+  margin: 0 2px;
+  background-color: lightblue;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+/*Changes colour when the dot button is pressed*/
+.active, .dot:hover {
+  background-color: gray;
+}
+
+/* Next & prev buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  margin-left: 60px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position for the next button */
+.next {
+  margin-right: -40px;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* when the mouse hovers over the next & prev button, there is a see-through black border */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.landartText {
+  color: white;
+  font-size: 15px;
+  padding: 8px 120px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.landarchText {
+  color: white;
+  font-size: 15px;
+  padding: 8px 120px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.landphotoText {
+  color: white;
+  font-size: 15px;
+  padding: 8px 120px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/*images for the slideshow*/
+.landarch
+{
+    padding-left: 50px;
+    padding-top: 20px;
+    border-radius: 15%;
+}
+          
+.landart
+{
+    padding-left: 50px;
+    padding-top: 20px;
+    border-radius: 15%;
+}
+.landphoto
+{
+    padding-left: 50px;
+    padding-top: 20px;
+    border-radius: 15%;
+}
+
+
+/* The side nav bar menu */
+.sideNavbar {
+  top: 0;
+  left: 0;
+  background-color: black;
+  overflow-x: hidden; /* No horizontal scroll */
+  padding-top: 70px; /* Content is 70px from the top */
+  transition: 0.5s; /* 0.5 second transition for the sideNavbar */
+  height: 100%;
+  width: 0; /* Use Javascript to change */
+  position: fixed;
+  z-index: 1; 
+  
+}
+
+/* The side nav bar links */
+.sideNavbar a {
+  padding: 20px 20px 20px 30px;
+  text-decoration: none;
+  font-size: 23px; /*text size*/
+  color: white; /*text colour*/
+  display: block;
+  transition: 0.5s;
+}
+
+/*this changes the colour of the nav links when the mouse hovers over it */
+.sideNavbar a:hover {
+  color: lightblue;
+}
+
+/* Placement and style of the close button (X) */
+.sideNavbar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 30px;
+  font-size: 38px;
+  margin-left: 30px;
+}
+
+/* Button used to open side nav bar */
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+/*Colour changes when you hover over the open button*/
+.openbtn:hover {
+  background-color: lightblue;
+}
+
+/* Position of the side nav bar (comes out from the left) */
+#opnButton {
+  transition: margin-left .5s; /* transition effect */
+  padding: 20px;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* If the height is less than 450px (on a smaller screen) then there is less padding and the font is smaller */
+@media screen and (max-height: 450px) {
+  .sideNavbar {
+      padding-top: 15px;
+    }
+  .sideNavbar a {
+      font-size: 18px;
+    }
+    
+
+    
+
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.landartText, .landarchText, .landphotoText
+    {
+        font-size: 11px
+    }
+    
+        .landarchH1
+{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    
+}
+}
+
+
+
+
+@media screen and (max-width: 1200px){
+       
+
+    
+    
+  .introIndex
+    {
+    padding-top: 5px;
+    padding-bottom: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+    text-align: center;
+    font-size: 15px;    
+    }
+    
+    .capaText
+{
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-right: 1px;
+    padding-left: 10px;
+    text-align: left;
+   
+}
+.brownText
+{
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-right: 1px;
+    padding-left: 10px;
+    text-align: left;
+} 
+            
+.francoText
+{
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-right: 1px;
+    padding-left: 10px;
+    text-align: left;
+}
+   .slideshowContainer
+    {
+        margin-right: 30px;
+        
+    }
+    
+    .indexH1
+{
+    text-align: center;
+    font-size: 20px;
+    
+}
+    
+    /* slideshow caption text */
+.landartText {
+  color: white;
+  font-size: 10px;
+  padding: 8px 50px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.landarchText {
+  color: white;
+  font-size: 10px;
+  padding: 8px 50px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.landphotoText {
+  color: white;
+  font-size: 10px;
+  padding: 8px 50px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+    
+.backImg {
+    width: 100%;
+  height: 600px;
+  background-image:url('https://www.nationaltrust.org.uk/images/1431734049031-capability-brown-1400.jpg');
+    background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+    
+    .backImg2 {
+        width: 100%;
+  height: 600px;
+  background-image:url('http://www.redraggallery.co.uk/library/inventory/Stephen-Brown-8956HQ-High-Summer.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+        .backImg3 {
+        width: 100%;
+  height: 600px;
+  background-image:url('https://photogrist.com/wp-content/uploads/2014/01/Franco-Fontana9.jpg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  
+}
+    
+.column2 {
+ 
+  width: 5%;
+} 
+    
+      
+}
+
+/*
+@media screen and (max-width: 1000px)
+{
+.capaBrownImg
+{
+   
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%
+   
+}
+    
+.textXimg
+    {
+        display: block;
+        padding-top: 100px;
+    }    
+}
+*/
+    
+@media screen and (max-width:1024px){
+  
+    
+    .capaGarden1
+    {
+        padding-left: 20px;
+        padding-bottom: 30px;
+        width: 100%;
+    }
+    
+    .textXimg
+    {
+       -webkit-columns: 2 350px;
+       -moz-columns: 2 350px;
+            columns: 2 350px;
+        padding-top: 30px;
+    } 
+    
+    .landArchintro
+    {
+    padding-top: 5px;
+    padding-bottom: 30px;
+    padding-right: 1px;
+    padding-left: 1px;
+    text-align: left;
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    }
+    
+    .landArchintroH2
+{
+    font-family: "Trebuchet MS", sans-serif;
+ 
+    padding-right: 30px;
+    font-size: 15px;
+
+}
+}    
+  
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!-- Here I declared the html property, for as the file will be an html. furthur we link the style sheet by making a styles CSS file by declaring the style function within the style.css file. After that, we reference the other pages with using the '<a href>' Tag. The <script> tag is used to link to the jQuery library in the <head> tag. There is also a link to use handlebars.  >-->
+<html>
+    <head>
+         
+          <link rel="stylesheet" href="styles.css">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <script src="jquery-3.3.1.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+          <script src="js/scripts.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+          <script src="js/larch.js"></script>
+
+          <meta name="description" content="This a Website for ScapeLand.">
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          
+        
+    </head>
+    
+    <body>
+        
+           
+<!--        Side nav bar-->
+        
+       <nav id="sideBar" class="sideNavbar">
+           <div capaSidenav>
+           
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="index.html">Home</a>
+              <a href="landscape_architecture.html">Landscape Architecure</a>
+              <a href="landscape_art.html">Landscape Art</a>
+              <a href="landscape_photography.html">Landscape Photography</a>
+               </div>
+               
+       </nav>
+        
+        
+        
+<!--        open button for the side nav bar-->
+        <div class="backImg">
+<div id="opnButton" class="logoX">       
+  <button class="openbtn" onclick="openNav()">&#9776;</button>
+<!--    logo next to the nav bar-->
+    <a href="index.html"><img  class="logo" src="logo/ScapeLand1.png" height="50"></a>
+</div>
+            
+            </div>
+        
+        
+
+        
+        
+        <h1 id="header"></h1>
+        
+        <h1 class="landarchH1">Lancelot "Capability" Brown</h1>
+        
+    
+        
+        
+    <div class="main">
+    <div class="textXimg">
+        
+        <img class="capaGarden1" src="img/Stephen-Brown-beach1.jpg" style="width: 100%" width="700" height="400">
+        <h2 class="landArchintroH2"> Changing the face of eighteenth century England</h2>
+        <p class="landArchintro">Capability’ Brown is best remembered for landscape on an immense scale, constructing not only gardens and parkland, but planting woods and building farms linked by carriage drives, or `ridings', many miles from the main house. Although his work is continually reassessed, every landscape gardener and landscape architect since, both in Britain and across the developed world, has been influenced in one way or another by Brown. Over two centuries have passed since his death, but such are the enduring qualities of his work that over 150 of the 260 or so landscapes with which he is associated remain worth seeing today. The images that Brown created are as deeply embedded in the English character as the paintings of Turner and the poetry of Wordsworth.</p> 
+        </div>
+        </div>
+        
+
+<!--    Article recommedations-->
+    <div class="sideArticles" id="sideArticle">
+      <h3 class="popUptext">Articles We Recommend</h3>
+        <a href="https://www.dezeen.com/2020/09/20/dalston-curve-garden-hackney-video-open-house-london/" target="_blank">
+        <img class="landarchArticle1" src="img/landarchArticle1.jpg"></a>
+        <a href="https://www.bdlandarch.com/" target="_blank">
+        <img class="landarchArticle2" src="img/landarchArticle2.jpg"></a>
+        <a href="https://www.landscapeinstitute.org/" target="_blank">
+        <img class="landarchArticle3" src="img/landarchArticle3.jpg"></a>
+      
+</div>
+        
+        <div class="main">
+    <div class="textXimg">
+        
+        <img class="capaGarden2" src="img/Capability-Brown-garden1.jpg" style="width: 100%" width="700" height="400">
+        <h2 class="landArchintroH2">The Short History of Capability Brown</h2>
+        <p class="landArchintro">In 1741 he reached Stowe, Buckinghamshire where he rapidly assumed responsibility for the execution of both architectural and landscaping works in the famous garden. It was at Stowe in 1744 that Brown married Bridget Wayet, with whom he eventually had nine children.Lancelot Brown was baptised on 30 Aug 1716 at Kirkharle, Northumberland, the fifth of the six children of William Brown, a yeoman farmer and Ursula, née Hall, who had worked in the big house on the Kirkharle estate . He went to the village school at Cambo, and then began work as a gardener at Kirkharle, leaving in 1739.</p> 
+        </div>
+        </div>
+        
+        
+        
+        <div class="row2">
+     <div class="column2">   
+<img id="image" src="img/Capability-Brown-garden2.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" style="width: 100%" height="400">
+            </div>
+         <div class="column2">
+         <img src="img/Capability-Brown-garden3.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" style="width: 100%" height="400">
+         </div>
+            <div class="column2">
+        <img src="img/Capability-Brown-garden4.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" style="width: 100%" height="400">
+            </div>
+         
+            
+        </div>
+        
+        <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="img/Capability-Brown-garden2.jpg" style="width:100%" height="400">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="img/Capability-Brown-garden3.jpg" style="width:100%" height="400">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/Capability-Brown-garden4.jpg" style="width:100%" height="400">
+    </div>
+
+    
+
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+      
+       <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="img/Capability-Brown-garden2.jpg" onclick="currentSlide(1)" alt="Pond by Capability Brown" style="width:100%"  height="400">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/Capability-Brown-garden3.jpg" onclick="currentSlide(2)" alt="Landscape by Capability Brown" style="width:100%"  height="400">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/Capability-Brown-garden4.jpg" onclick="currentSlide(3)" alt="Greenscape by Stephen Brown" style="width:100%"  height="400">
+    </div>
+
+    
+  </div>
+</div>
+     
+        
+        
+        
+    <div class="capaSide">
+        
+        <h2 class="capaStyle">The Style of Capability</h2>
+
+        <p class="landArchintro2" >
+            Brown’s style derived from the two practical principles of comfort and elegance. On the one hand, there was a determination that everything should work, and that a landscape should provide for every need of the great house. On the other, his landscapes had to cohere and look elegant.</p>
+        <p class="landArchintro2" >
+            While his designs have great variety, they also appear seamless owing to his use of the sunk fence or ‘ha-ha’ to confuse the eye into believing that different pieces of parkland, though managed and stocked quite differently, were one. His expansive lakes, at different levels and apparently unconnected, formed a single body of water as if a river through the landscape, that like the parkland itself, ran on indefinitely.</p>
+        <p class="landArchintro2" >
+            This effortless coherence is taken for granted today in a way that was predicted in his obituary: ‘where he is the happiest man he will be least remembered, so closely did he copy nature his works will be mistaken’. His nickname of ‘Capability’ is though to have come from his describing landscapes as having “great capabilities”.
+        </p>
+        </div>
+        
+  
+        
+        <div class="footer">
+        <a href="https://twitter.com/hashtag/landscape?lang=en" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/explore/tags/landscape/?hl=en" class="fa fa-instagram"></a>
+        <a href="https://www.pinterest.co.uk/improvenet/landscaping/?lp=true" class="fa fa-pinterest"></a>
+        <div class="search-container">
+        <form>
+        <input id="name" name="person" type="text" placeholder="Search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+</div> 
+           
+             
+   
+        
+    </body>
+    
+</html>

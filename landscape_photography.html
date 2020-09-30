@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!-- Here I declared the html property, for as the file will be an html. furthur we link the style sheet by making a styles CSS file by declaring the style function within the style.css file. After that, we reference the other pages with using the '<a href>' Tag. The <script> tag is used to link to the jQuery library in the <head> tag. There is also a link to use handlebars.  >-->
+<html>
+    <head>
+         
+          <link rel="stylesheet" href="styles.css">
+          <script src="jquery-3.3.1.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+          <script src="js/scripts.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+          <script src="js/lphoto.js"></script>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <meta name="description" content="This a Website for ScapeLand.">
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    
+    <body>
+        
+           
+<!--        Side nav bar-->
+        
+       <nav id="sideBar" class="sideNavbar">
+           <div capaSidenav>
+           
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="index.html">Home</a>
+              <a href="landscape_architecture.html">Landscape Architecure</a>
+              <a href="landscape_art.html">Landscape Art</a>
+              <a href="landscape_photography.html">Landscape Photography</a>
+            
+               </div>
+               
+       </nav>
+        
+        
+        
+<!--        open button for the side nav bar-->
+        <div class="backImg3">
+        <div id="opnButton" class="logoX">       
+        <button class="openbtn" onclick="openNav()">&#9776;</button>
+<!--    logo next to the nav bar-->
+        <a href="index.html"><img class="logo" src="logo/ScapeLand1.png" height="50"></a>
+    </div>            
+</div>
+        
+        <h1 id="header"></h1>
+        <h1 class="landarchH1">Franco Fontana</h1>
+        
+    <div class="main">
+    <div class="textXimg">
+        
+        <img class="capaGarden1" src="img/franco-fontana-garden1.jpg" style="width: 100%" width="700" height="400">
+        <h2 class="landArchintroH2">In this monthly addition of ScapeLand our landscape photographer is the unique, Franco Fontana.</h2>
+        <p class="landArchintro"> “The purpose of art,” says Franco Fontana, “is to make visible the invisible.” This could seem like a strange thing for a photographer to say since the essential purpose of the camera is to capture the visible. But even though we are all looking at the same world, what each of us sees is unique. We each notice different elements of the physical universe: different shapes, different colors, different forms and different objects; and we each perceive in the things we see different meanings, different possibilities, and different purposes. Each of our private visual worlds is a secret: invisible, known only to us—unless, as Fontana suggests, we find a way to make it visible to others through art.</p> 
+        </div>
+        </div>
+        
+
+        <!--    Article recommedations-->
+    <div class="sideArticles" id="sideArticle">
+      <h3 class="popUptext">Articles We Recommend</h3>
+        <a href="https://digital-photography-school.com/11-surefire-tips-for-improving-your-landscape-photography/" target="_blank"><img class="landarchArticle1" src="img/landphotoArticle1.jpg"></a>
+        <a href="https://landscapephotographymagazine.com/" target="_blank"> <img class="landarchArticle2" src="img/landphotoArticle2.jpg"></a>
+        <a href="https://photographylife.com/landscapes" target="_blank"> <img class="landarchArticle3" src="img/landphotoArticle3.jpg"></a>
+      
+</div>
+        
+        <div class="main">
+    <div class="textXimg">
+        
+        <img class="capaGarden2" src="img/franco-fontana-garden2.jpg" style="width: 100%" width="700" height="400">
+        <h2 class="landArchintroH2">The Short History of Franco Fontana</h2>
+        <p class="landArchintro">Franco Fontana was born in Modena, in Northern Italy, in 1933. He taught himself photography and by age 32 was being offered solo exhibitions of his work. For more than five decades since he has been traveling the world (as he calls it his studio), making visible for us the visual marvels he sees hiding before our very eyes. The body of work for which he is most well known is his natural landscape photographs, which, though purely realistic, echo the work of the great abstract painters from history.</p> 
+        </div>
+        </div>
+        
+        
+        
+        <div class="row2">
+     <div class="column2">   
+<img id="image" src="img/franco-fontana-garden3.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" style="width: 100%" height="400">
+            </div>
+         <div class="column2">
+         <img src="img/franco-fontana-garden4.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" style="width: 100%" height="400">
+         </div>
+            <div class="column2">
+        <img src="img/franco-fontana-greenland.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" style="width: 100%" height="400">
+            </div>
+         
+            
+        </div>
+        
+        <!-- The Modal/Lightbox -->
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 3</div>
+      <img src="img/franco-fontana-garden3.jpg" style="width:100%" height="400">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 3</div>
+      <img src="img/franco-fontana-garden4.jpg" style="width:100%" height="400">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 3</div>
+      <img src="img/franco-fontana-greenland.jpg" style="width:100%" height="400">
+    </div>
+
+    
+
+
+    <!-- Caption text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+      
+       <!-- Thumbnail image controls -->
+    <div class="column">
+      <img class="demo" src="img/franco-fontana-garden3.jpg" onclick="currentSlide(1)" alt="Tree by Franco Fontana" style="width:100%"  height="400">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/franco-fontana-garden4.jpg" onclick="currentSlide(2)" alt="Land by Franco Fontana" style="width:100%"  height="400">
+    </div>
+
+    <div class="column">
+      <img class="demo" src="img/franco-fontana-greenland.jpg" onclick="currentSlide(3)" alt="Greens by Franco Fontana" style="width:100%"  height="400">
+    </div>
+
+    
+  </div>
+</div>
+     
+        
+        
+        
+    <div class="capaSide">
+        
+        <h2 class="capaStyle">The Style of Franco Fontana</h2>
+
+        <p class="landArchintro2" >
+            Fontana has also long found as much inspiration in the city as in the countryside. He sees in our built worlds more than buildings, surfaces, objects and colors. He engages with the symphony of relationships that is constantly being rewritten between all of the physical elements of the urban landscape. Through his camera he captures the fleeting moments when shadow and light become solid as stone, and the sky becomes as tactile as the earth.</p>
+        <p class="landArchintro2" >
+            The shapes and forms Fontana reveals in his urban landscape photographs rival the compositions of the pioneers of modern abstraction. They speak to geometric universalities in the tradition of Kazimir Malevich . Their primary color relationships, and vocabulary of line and shape live up to the highest accomplishments of Piet Mondrian and Theo van Doesburg. They reveal in the everyday visual language of architecture a universal harmony. They elevate the ordinary reality of the built world, bringing it back in balance with nature.</p>
+        <p class="landArchintro2" >
+            In addition to studying the architecture of the city, Franco Fontana has also spent many years capturing other aspects of how society interacts with urbanity. In one series, which he calls “presenza assenza,” or presence absence, he focuses on shadows. These images continue his exploration of the geometry, symmetry, and color relationships that are ever present in the visual environment, while adding the human element, as experienced through the intermingling of our ephemeral essence with the stone backdrop of the city.
+        </p>
+        </div>
+        
+  
+        
+        <div class="footer">
+        <a href="https://twitter.com/hashtag/landscape?lang=en" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/explore/tags/landscape/?hl=en" class="fa fa-instagram"></a>
+        <a href="https://www.pinterest.co.uk/improvenet/landscaping/?lp=true" class="fa fa-pinterest"></a>
+        <div class="search-container">
+        <form>
+        <input id="name" name="person" type="text" placeholder="Search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+  </div> 
+        
+ </body>
+    
+</html>

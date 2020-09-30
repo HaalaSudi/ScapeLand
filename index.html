@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!-- Here I declared the html property, for as the file will be an html. furthur we link the style sheet by making a styles CSS file by declaring the style function within the style.css file. After that, we reference the other pages with using the '<a href>' Tag. The <script> tag is used to link to the jQuery library in the <head> tag. There is also a link to use handlebars.  >-->
+<html>
+    <head>
+         
+          <link rel="stylesheet" href="styles.css">
+          <script src="jquery-3.3.1.min.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+          <script src="js/scripts.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.js"></script>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <meta name="description" content="This a Website for ScapeLand.">
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    </head>
+    
+    <body style="overflow-x: hidden">
+        
+<!--        Side nav bar-->
+        
+       <nav id="sideBar" class="sideNavbar">    
+           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="index.html">Home</a>
+              <a href="landscape_architecture.html">Landscape Architecure</a>
+              <a href="landscape_art.html">Landscape Art</a>
+              <a href="landscape_photography.html">Landscape Photography</a>
+
+       </nav>
+        
+<!--        open button for the side nav bar-->
+        
+<div id="opnButton" class="logoX">        
+  <button class="openbtn" onclick="openNav()">&#9776;</button>
+<!--    logo next to the nav bar-->
+    <a href="index.html"><img  class="logo" style="width: 30%" src="logo/ScapeLand1.png" height="50"></a>
+
+</div>
+<!--        HTML for the slideshow-->
+    
+        <div class="slideshowContainer">
+            
+            
+            <div class="mySlides1 fade">
+                <div class="slideNumber">1/3</div>
+                <a href="landscape_art.html"><img class="landart" src="img/LandscapeArtIndex.jpg" style="width: 100%" width="1140" height="450" ></a>
+                    <div class="landartText"> ARRAN OPTIMISM, oil painting by Scott Naismith</div>
+                
+            </div>
+            
+            <div class="mySlides1 fade">
+                <div class="slideNumber">2/3</div>
+                <a href="landscape_architecture.html"><img class="landarch" src="img/LandscapeArchIndex.jpg" style="width: 100%" width="1140" height="450" ></a>
+                    <div class="landarchText"> Château de Villandry, Castle in Villandry, France</div>
+            </div>
+            
+             <div class="mySlides1 fade">
+                <div class="slideNumber">3/3</div>
+                 <a href="landscape_photography.html"><img class="landphoto" src="img/LandscapePhotoIndex.jpg" style="width: 100%" width="1140" height="450" ></a>
+                    <div class="landphotoText"> Landscape Photography by Steffen Egly</div>
+            </div>
+            
+<!--            HTML for the prev and next buttons on slideshow-->
+            <a class="prev" onclick="addSlides(-1)">&#10094;</a>
+            <a class="next" onclick="addSlides(1)">&#10095;</a>
+            
+        </div>
+        
+<!--        HTML for the buttons at the bottom of the slideshow-->
+        <br>
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+        
+        <p class="introIndex" >Welcome to ScapeLand, the place you want to be for all things landscape. Each month we are proud to present a landscape architect, a landscape artist and a landscape photographer for landscape enthusiasts. We try to provide both knowledge and inspiration to upcoming artists and entertainment to those that just love landscapes. In this monthly issue we will be introducing to you three artists in their own right.
+</p> 
+            
+        
+<!--       images at the bottom of the screen (left) -->
+        
+ <div class="row">
+  <div class="column1">
+      <div class="capaImg">
+          <a href="landscape_architecture.html"><img src="img/Capability-Brown-Bath.jpg" style="width: 100%"
+                                                     alt="Capability Brown" width="1140" height="450"></a>
+      </div>
+      
+      <div class="capaImghover">
+          <a href="landscape_architecture.html"><img src="img/capability-brown-hampton-court-garden.jpg" style="width: 100%" alt="Capability Brown" width="1140" height="450"></a>
+  </div>
+  </div>
+     <div class="indexColumn">
+      <h1 class="indexH1">Lancelot "Capability" Brown</h1>
+         <p class="capaText"> The first being a landscape architect of the name Lancelot Brown or 'Capability Brown' as he is more widely recognised. This landscape architect born in the 1700s is one of the household names to landscape enthusiasts. We shall be delving into his history and his impressive portfolio of work.</p></div>
+     
+     <!--       images at the bottom of the screen (middle) -->
+     
+      <div class="column1">
+      <div class="brownImg">
+          <a href="landscape_art.html"><img src="img/Stephen-Brown-Castle-Ferry-Dartmouth.jpg" style="width: 100%" alt="Stephen Brown" width="1140" height="450"></a>
+          </div>
+          
+      <div class="brownImghover">
+          <a href="landscape_art.html"><img src="img/Stephen-Brown-The-Ferry-Inn-Salcombe.jpg" style="width: 100%" alt="Stephen Brown" width="1140" height="450"></a>
+  </div>
+  </div>
+     <div class="indexColumn">
+      <h1 class="indexH1">Stephen Brown</h1>
+         <p class="brownText"> The second person we shall be presenting to you is an artists named Stephen Brown. While not well known, this british based artist brings a type of serenity and calmness to his canvas. We will be discussing the art of Stephen Brown as well as his preperations, tools and muses.</p> </div>
+     
+     <!--       images at the bottom of the screen (right) -->
+     
+<div class="column1">
+    <div class="francoImg">   
+        <a href="landscape_photography.html"><img src="img/franco-fontana-greenland.jpg" style="width: 100%" alt="Franco Fontana" width="1140" height="450"></a>
+        <div class="logoMiddle">
+            </div>
+</div>
+    
+    <div class="francoImghover">
+        <a href="landscape_photography.html"><img src="img/franco-fontana-fullcolor.jpg" style="width: 100%" alt="Franco Fontana" width="1140" height="450"></a>
+  </div>
+  </div>
+  
+</div>
+        <div class="indexColumn">
+            <h1 class="indexH1">Franco Fontana</h1>
+           <p class="francoText"> Last but not least is one of the most unique landscape photographers of his time, Franco Fontana. This Italian photographer knows how to bring flare and bold colours to his photos while keeping the realistic element in the landscape he is portraying. It will be interesting to explore more of his work as well as learn more about his inspirations and motivations.</p>  </div>
+
+    <div class="footer">
+        <a href="https://twitter.com/hashtag/landscape?lang=en" class="fa fa-twitter"></a>
+        <a href="https://www.instagram.com/explore/tags/landscape/?hl=en" class="fa fa-instagram"></a>
+        <a href="https://www.pinterest.co.uk/improvenet/landscaping/?lp=true" class="fa fa-pinterest"></a>
+        <div class="search-container">
+        <form>
+        <input id="name" name="person" type="text" placeholder="Search">
+        <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+</div>
+        <script>
+            
+document.getElementById('name').addEventListener('keyup', opener, false);
+// Width and Height of the side nav bar when opened
+function openNav() {
+  document.getElementById("sideBar").style.width = "250px";
+  document.getElementById("opnButton").style.marginLeft = "250px";
+}
+
+// Width and Height of the side nav bar when closed (should be set to 0)
+function closeNav() {
+  document.getElementById("sideBar").style.width = "0";
+  document.getElementById("opnButton").style.marginLeft = "0";
+}
+ 
+    
+////Javascript for slide show
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function addSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides1");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+        </script>
+        
+    </body>
+    
+</html>
